@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Gestión de Productos</h1>
+  <hr>
+  <br>
+
+   <!-- Agrega el código del buscador por categoría -->
+   <div id="buscador" class="container-fluid">
+    <label for="categoryFilter">Buscar por categoría:</label>
+    <input type="text" id="categoryFilter" placeholder="Ingresa una categoría">
+    <button id="searchBtn">Buscar</button>
+   </div>
+
+  <form id="productForm">
+    <label for="ProductAdd">Agregar Producto:</label>
+    <input type="text" id="productName" placeholder="Nombre del producto" required>
+    <input type="number" id="productPrice" placeholder="Precio del producto" required>
+    <select id="productCategory" required>
+      <option value="">Selecciona una categoría</option>
+      <option value="remeras">Remeras</option>
+      <option value="buzos">Buzos</option>
+      <option value="camperas">Camperas</option>
+      <option value="pantalones">Pantalones</option>
+    </select>
+    <button type="submit">Agregar Producto</button>
+  </form>
+  <br>
+  <hr>
+  <br>
+
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="productList"></tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
